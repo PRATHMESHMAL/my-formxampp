@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  background-color: rgb(184, 255, 30);
+  flex-wrap: wrap;
+  justify-content: center; /* Optional: centers items */
+  gap: 10px; /* Modern spacing instead of margin */
+  padding: 10px;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  flex: 1 1 120px; /* Grow/Shrink with min width */
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  min-width: 80px; /* Optional for small screens */
+}
+</style>
+</head>
+<body>
+
+<h1>Create a Flex Container</h1>
+
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>  
+  <div>10</div>
+  <div>11</div>
+  <div>12</div>   
+</div>
+
+<p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
+<p>Direct child elements(s) of the flexible container automatically become flexible items.</p>
+
+</body>
+</html>
